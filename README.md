@@ -29,3 +29,21 @@
       color = ws['B2'].value
       print(f'{name}: {color}')
     ```
+
+- Grab a whole column
+  - loop through the tuple and print out each value
+  ```python
+   column_a = ws['A']
+   for cell in column_a:
+     print(f'{cell.value}\n')
+  ```
+- Grab a whole row `row_a = ws['1']`
+
+- Grab a range
+
+```python
+range = ws['A2':'A10']
+for cell in range:
+    for x in cell:
+        print(x.value)
+```
